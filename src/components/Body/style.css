@@ -1,0 +1,8 @@
+.btn-opacity:hover {
+    opacity: 0.8; /* Adjust the opacity value as needed */
+  }
+
+.custom-btn{
+    text-decoration: underline;
+    color: inherit;
+}
