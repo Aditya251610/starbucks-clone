@@ -1,4 +1,15 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client'
+import Signin from '../components/Sign In/signin';
+
+function btnClick(){
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+        <React.StrictMode>
+            <Signin />
+        </React.StrictMode>
+    );
+}
 
 const customStyle = {
     fontFamily: 'SoDo Sans, "Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -31,7 +42,7 @@ function navbar(){
                             </a>
                         </li>
                         <li className="nav-item fs-6">
-                            <button type="button" className="btn btn-outline-light rounded-pill ms-2" style={{ backgroundColor:"#181A1B", color: "#7AFFCE" }}>Sign In</button>
+                            <button type="button" className="btn btn-outline-light rounded-pill ms-2" style={{ backgroundColor:"#181A1B", color: "#7AFFCE" }} onClick={btnClick}>Sign In</button>
                         </li>
                         <li class="nav-item fs-6">
                             <button type="button" className="btn btn-outline-dark rounded-pill ms-3" style={{ color: "#7AFFCE", backgroundColor: "black" }}>Join Now</button>
